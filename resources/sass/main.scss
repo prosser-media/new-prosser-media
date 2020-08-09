@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@media (min-width: 1024px) {
+    .nav-shown {
+        display: flex !important;
+    }
+
+    .container {
+        max-width: 65%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 50%;
+    }
+}
+
+.custom-page,
+.project-content {
+    @apply text-center;
+
+    p {
+        @apply text-center leading-relaxed;
+    }
+
+    h2 {
+        @apply text-primary-normal text-3xl mb-2;
+    }
+
+    li {
+        @apply list-decimal;
+    }
+
+    a {
+        @apply text-primary-normal;
+
+        &:hover {
+            @apply text-primary-light underline;
+        }
+    }
+}
